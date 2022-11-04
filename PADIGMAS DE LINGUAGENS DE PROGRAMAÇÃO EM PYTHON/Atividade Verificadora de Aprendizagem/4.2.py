@@ -1,9 +1,4 @@
-#parte 1 
-def somaImposto(taxaImposto,custo):
-    custo += custo*taxaImposto
-    return custo 
-
-#parte 2
+#Parte 2
 def valorPagamento(valor_prestacao,atraso):
     valor_real=0
     if(atraso > 0):
@@ -25,5 +20,3 @@ while True:
         break
 
 print(num_prestacoes, "prestaçoes e um total de R$", total_pago)
-
-
