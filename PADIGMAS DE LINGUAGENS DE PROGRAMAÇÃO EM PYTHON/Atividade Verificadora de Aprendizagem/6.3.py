@@ -7,7 +7,6 @@ class ContaCorrente:
 
     def alteraNome(self, nome):
         self.nome = nome
-        return self.nome
     
     def deposito(self, valor_deposito):
         self.saldo += valor_deposito
