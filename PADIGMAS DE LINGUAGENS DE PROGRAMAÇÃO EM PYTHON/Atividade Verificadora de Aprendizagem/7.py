@@ -1,6 +1,6 @@
 def calcular():
     class Calculadora:
-        def __init__(self,primeiroOperando, segundoOperando):
+        def _init_(self, primeiroOperando, segundoOperando):
             self.primeiroOperando = primeiroOperando
             self.segundoOperando = segundoOperando
         

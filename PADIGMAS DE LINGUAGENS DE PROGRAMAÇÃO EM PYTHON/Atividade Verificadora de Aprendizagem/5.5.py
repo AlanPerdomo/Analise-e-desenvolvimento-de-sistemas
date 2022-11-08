@@ -21,4 +21,3 @@ print(
     "\nTemperatura mínima = ",temp_min,
     "\nTemperatura média = ",(temp_total/qtd_temp)
 )
-
