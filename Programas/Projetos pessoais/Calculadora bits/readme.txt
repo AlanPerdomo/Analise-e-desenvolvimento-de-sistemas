@@ -1,0 +1,1 @@
+ideia: Criar calculadora que converta os valores entre binario, hexadecimal e decimal.
