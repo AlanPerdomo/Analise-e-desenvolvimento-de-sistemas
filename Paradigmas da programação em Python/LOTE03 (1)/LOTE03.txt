@@ -1,0 +1,5 @@
+O aluno deverá implementar dois programas, um que exiba a frase "Olá Mundo" e outro que imprima os números de um 1 
+até 1000 e ao final deve verificar o tempo que cada um leva para ser executado nas linguagens C/C++, Python e Java. 
+Depois deverá gerar um relatório com os resultados obtidos, explicando a diferença entre os tempos a partir das 
+diferenças entre as implementações das linguagens. O relatório deve conter a descrição do hardware e do sistema 
+operacional no qual o teste está sendo executado.

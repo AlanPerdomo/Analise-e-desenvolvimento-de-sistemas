@@ -1,0 +1,20 @@
+# 1 - Ler dois números e imprimir o maior
+# 2 - Ler dois números e imprimir o menor
+# 3 - Ler dois números e imprimir a soma
+# 4 - Imprimir se um número é par ou ímpar
+# 5 - Ler dois números e uma String com um operador e imprimir o resultado da operação
+# 6 - Ler dois números e imprimir o primeiro elevado ao segundo
+# 7 - Ler três números e calcular uma regra de 3
+# 8 - Ler um número que representa o valor de uma conta de restaurante e a quantidade de pessoas, imprimir o valor por pessoa
+# 9 - Ler dois números que representam os valores dos catetos de um triângulo retângulo e imprimir o valor da hipotenusa (a2 = b2 + c2)
+# 10 - Ler dois números e dizer quanto o segundo representa em percentual do primeiro.
+# 11 - Ler dois números complexos e imprimir a soma
+# 12 - Ler dois números complexos e imprimir o produto
+# 13 - Ler dois números e imprimir a média
+# 14 - Ler dois números que representam os lados de um retângulo, imprima o perímetro e a área
+# 15 - Ler o raio de um círculo e imprimir o perímetro e a área
+# 16 - Ler dois números que representam a base a altura de um triângulo, imprimir a área
+# 17 - Ler três números e imprimir se o primeiro é maior ou menor que a soma dos outros dois
+# 18 - Ler dois números e se o segundo for diferente de zero imprimir a divisão, se for igual a zero imprimir uma mensagem indicando erro.
+# 19 - Ler três números que representam os coeficientes de uma equação do segundo grau,imprima as raízes dessa equação
+# 20 - Ler um número e imprimir a tabuada de 0 a 10 daquele número
