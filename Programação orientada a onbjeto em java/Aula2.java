@@ -36,31 +36,10 @@ public class Aula2{
     }
         public static void main(String[] args){
             Scanner data = new Scanner(System.in);
-
-            Humano humano1 = new Humano();
-            humano1.nome = "a";
-            humano1.cor_olhos = "preto";
-            humano1.altura = 1.8;
-            humano1.peso = 20;
-
-            Humano humano2 = new Humano();
-            humano2.cor_olhos = "b";
-            humano2.nome = "branco";
-            humano2.altura = 10;
-            humano2.peso = 20; 
-
-            Humano humano3 = new Humano();
-            humano3.nome = "c";
-            humano3.cor_olhos = "amarelo";
-            humano3.altura = 1.6;
-            humano3.peso = 20; 
-
-            Humano humano4 = new Humano();
-            humano4.nome = "d";
-            humano4.cor_olhos = "azul";
-            humano4.altura = 1.0;
-            humano4.peso = 20; 
-
+            Humano[] humano = new Humano[5];
+            for (int i = 0; i < 5; i++){
+                humano[i] = new Humano();
+            }
             Gatos gato1 = new Gatos();
             gato1.raca = "Vira-lata";
             gato1.peso = 2;
@@ -76,23 +55,14 @@ public class Aula2{
             gato3.peso = 10;
             gato3.nome = "Bhano";
 
-            if(humano1.altura > 1.7){
-                System.out.printf("Altura do humano 1 é maior que 1.7\n");
+        for (int i = 0; i < 5; i++){
+            if(humano[i].altura > 1.7){
+                System.out.printf("Altura do humano %d é maior que 1.7\n", i+i);
             }
-            if(humano2.altura > 1.7){
-                System.out.printf("Altura do humano 2 é maior que 1.7\n");
-            }
-            if(humano3.altura > 1.7){
-                System.out.printf("Altura do humano 3 é maior que 1.7\n");
-            }
-            if(humano4.altura > 1.7){
-                System.out.printf("Altura do humano 4 é maior que 1.7\n");
-            }
-
-            System.out.printf("Nome Gato 1: %s\n", gato1.nome);
-            System.out.printf("Nome Gato 2: %s\n", gato2.nome);
-            System.out.printf("Nome Gato 3: %s\n", gato3.nome);
-            
-            System.out.println("Hello World\n");
+        System.out.printf("Nome Gato 1: %s\n", gato1.nome);
+        System.out.printf("Nome Gato 2: %s\n", gato2.nome);
+        System.out.printf("Nome Gato 3: %s\n", gato3.nome);
+        System.out.println("Hello World\n");
+        }
     }
 }
