@@ -36,4 +36,53 @@ public class Aula3 {
             System.out.println("Funcionamento ok");
         }
     }
+    public static class Pessoa{
+        public String nome;
+        public int idade;
+        public double peso;
+
+        public void Andar(){}
+        public void Dormir(){}
+
+        public static void main(String[]args){
+            Scanner ler = new Scanner(System.in);
+            Pessoa pessoa[] = new Pessoa[5];
+            
+            for(int i = 0; i < pessoa.length; i++){
+                pessoa[i] = new Pessoa();
+            }
+            
+            for(int i = 0; i < pessoa.length; i++){
+                System.out.println("Nome:");
+                pessoa[i].nome = ler.next();
+                System.out.println("Idade: ");
+                pessoa[i].idade = ler.nextInt();
+                System.out.println("peso: ");
+                pessoa[i].peso = ler.nextDouble();
+            }
+
+            for(int i = 0; i < pessoa.length; i++){
+                if(pessoa[i].idade < 12){
+                    System.out.printf("%s é uma crianca. \n", pessoa[i].nome);
+                }
+            }
+        }
+    }
+    public static class Animais{
+        public String classificacao;
+        public int idade;
+        public String loc_encontrado;
+
+        public void Andar(){}
+        public void Comer(){}
+
+        public static void main(String[]args){
+            Scanner ler = new Scanner(System.in);
+            Animais animal[] = new Animais[10];
+
+            for(int i = 0; i < animal.length; i++){
+                animal[i] = new Animais();
+            }
+        }
+    }
 }
