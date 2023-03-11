@@ -75,7 +75,8 @@ public class Aula3 {
 
         public void Andar(){}
         public void Comer(){}
-
+        
+        static int contador = 0;
         public static void main(String[]args){
             Scanner ler = new Scanner(System.in);
             Animais animal[] = new Animais[10];
@@ -83,6 +84,21 @@ public class Aula3 {
             for(int i = 0; i < animal.length; i++){
                 animal[i] = new Animais();
             }
+            for(int i = 0; i < animal.length; i++){
+                System.out.println("Classificação: ");
+                animal[i].classificacao = ler.next();
+                System.out.println("Idade: ");
+                animal[i].idade = ler.nextInt();
+                System.out.println("peso: ");
+                animal[i].loc_encontrado = ler.next();
+                if(animal[i].idade > 50){
+                    contador += 1;
+                }
+            }
+            System.out.printf("%d animais possuem idade superior a 50 anos. \n" , contador);
         }
+    }
+    public static class Automovel{
+        
     }
 }
