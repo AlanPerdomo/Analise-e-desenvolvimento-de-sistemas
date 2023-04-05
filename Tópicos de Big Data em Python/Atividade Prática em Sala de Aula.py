@@ -19,8 +19,8 @@ print(list(filter(lambda x: (x % 2 ==0),lista2)))
 #   Entrada: lista de 1 até 20
 #   Saída: [3, 6, 9, 12, 15, 18]
 
-lista3 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
-print(list(filter(lambda x: (x % 3 ==0),lista3)))
+lista3 = range(1,21)
+print(list(filter(lambda x: (x % 3 == 0),lista3)))
 
 #   4 Expressões Regulares: Leia um arquivo txt com as palavras abaixo e imprima quantas palavras com
 #   as seguintes regras no texto lido:
@@ -31,15 +31,16 @@ print(list(filter(lambda x: (x % 3 ==0),lista3)))
 #   b. A string inicia com nenhuma ou várias letras “a” e termina com um (1) b.
 
 texto = open("Tópicos de Big Data em Python/texto.txt","r")
-padraoA = '^b.*'
-padraoB = '^a*b+$'
+palavras = texto.read().split()
+padraoA = '^b(b*)$'
+padraoB = '(a*)b$'
 a = 0
 b = 0
-for palavra in texto:
-    resultA = re.match(padraoA, palavra)
+for i in palavras:
+    resultA = re.search(padraoA, i)
     if resultA:
         a += 1
-    resultB = re.match(padraoB, palavra)
+    resultB = re.search(padraoB, i)
     if resultB:
         b += 1
 print("seguindo as regras 'a' foram", a ,"palavras.")
@@ -54,13 +55,11 @@ print("seguindo as regras 'b' foram", b ,"palavras.")
 #   juca@gmail.com
 #   feliciana@outlook.com
 
-email = open("Tópicos de Big Data em Python/emails.txt","r")
-e_padroes = '@gmail'
+email = open("Tópicos de Big Data em Python/emails.txt","r").read().split()
 sum_emails = 0
-for palavra in email:
-    resultado = re.match(e_padroes, palavra)
+for i in email:
+    resultado = re.search('@gmail', i)
     if resultado:
         sum_emails += 1
-        print(resultado)
 print(sum_emails, "e-mails com gmail.")
 
